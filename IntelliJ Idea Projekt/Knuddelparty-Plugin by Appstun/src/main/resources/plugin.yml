@@ -1,16 +1,16 @@
 name: Knuddelparty-Plugin
-version: 1.0
+version: 3.4
 main: de.appstun.knuddelparty._Main
 api-version: 1.17
 authors: [Appstun]
-description: Plugin von Appstun.
+description: Knuddel Spieler!
 
 commands:
-  join:
-    description: Trete einer Knuddelparty bei.
   knuddelparty:
     description: Starte eine Knuddelparty.
+  join:
+    description: Trete einer Knuddelparty bei.
+  start:
+    description: Starte eine Knuddelparty direkt.
   end:
     description: Beende eine Knuddelparty oder eine Einladung zu einer Knuddelparty.
-  start:
-    description: Startet die Knuddelparty direkt.
