@@ -40,7 +40,7 @@ public class C_End implements CommandExecutor {
                     }
                 }
                 if(!_Main.IsKnuddelpartyEinladung && !_Main.IsKnuddelparty) {
-                    p.sendMessage(_Main.prefix + "§cEs läuft aktuell keine zu einer Knuddelparty und auch keine Einladung zu einer Knuddelparty!");
+                    p.sendMessage(_Main.prefix + "§cEs läuft aktuell keine Knuddelparty und auch keine Einladung zu einer Knuddelparty!");
                 }
             }
         } else {

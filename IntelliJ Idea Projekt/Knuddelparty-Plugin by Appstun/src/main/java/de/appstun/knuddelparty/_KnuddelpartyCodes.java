@@ -288,8 +288,6 @@ public class _KnuddelpartyCodes {
                 }
                 if (countdown <= 0) {
                     Bukkit.getScheduler().cancelTask(C_Knuddelparty.Counter);
-                    Title.removeAll();
-                    Status.removeAll();
                     if (C_Knuddelparty.size >= 2) {
                         Bukkit.broadcastMessage(_Main.prefix + "§a§lEinladung zur Knuddelparty beendet!");
                         Bukkit.broadcastMessage(_Main.prefix + "§5Es machen §f" + C_Knuddelparty.size + " §5Spieler mit.");
@@ -311,7 +309,8 @@ public class _KnuddelpartyCodes {
                         _Main.EndOpKnuddelpartyEinladung = false;
                         _Main.StartKnuddelparty = false;
                         _Main.IsStartKnuddelparty = false;
-
+                        Title.removeAll();
+                        Status.removeAll();
                     } else {
                         Bukkit.broadcastMessage(_Main.prefix + "§c§lEinladung zur Knuddelparty beendet!");
                         if(C_Knuddelparty.size == 1) {
@@ -351,6 +350,8 @@ public class _KnuddelpartyCodes {
                         _Main.EndOpKnuddelpartyEinladung = false;
                         _Main.StartKnuddelparty = false;
                         _Main.IsStartKnuddelparty = false;
+                        Title.removeAll();
+                        Status.removeAll();
                         return;
                     }
                     if(_Main.EndKnuddelpartyEinladung) {
@@ -372,6 +373,8 @@ public class _KnuddelpartyCodes {
                         _Main.EndOpKnuddelpartyEinladung = false;
                         _Main.StartKnuddelparty = false;
                         _Main.IsStartKnuddelparty = false;
+                        Title.removeAll();
+                        Status.removeAll();
                         return;
                     }
                     if(_Main.EndOpKnuddelpartyEinladung) {
@@ -393,6 +396,8 @@ public class _KnuddelpartyCodes {
                         _Main.EndOpKnuddelpartyEinladung = false;
                         _Main.StartKnuddelparty = false;
                         _Main.IsStartKnuddelparty = false;
+                        Title.removeAll();
+                        Status.removeAll();
                         return;
                     }
                     if (countdown == 15) {
