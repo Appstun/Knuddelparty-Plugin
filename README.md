@@ -3,8 +3,8 @@
 # Knuddelparty-Plugin
 Knuddel Spieler!
 
-Version: 3.4
-Erstellt ab der Minecraft-Version 1.17.
+Version: 1.3.6
+Funktioniert am besten ab der Minecraft-Version 1.17.
 
 Befehle:
   - /knuddelparty                         --- Starte eine Knuddelparty.
