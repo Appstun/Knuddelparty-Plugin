@@ -329,6 +329,8 @@ public class _KnuddelpartyCodes {
                         _Main.EndOpKnuddelpartyEinladung = false;
                         _Main.StartKnuddelparty = false;
                         _Main.IsStartKnuddelparty = false;
+                        Title.removeAll();
+                        Status.removeAll();
                     }
                 } else {
                     if (!p.isOnline()) {
@@ -404,7 +406,7 @@ public class _KnuddelpartyCodes {
                         Bukkit.broadcastMessage(_Main.prefix + "§7Die Einladung zur Knuddelparty läuft in 15 Sekunden aus!");
                     }
                     if(C_Knuddelparty.size == 1) {
-                        Status.setTitle("§9Noch " + countdown + " Sekunden §7| §b" + C_Knuddelparty.size + " Spieler macht mit");
+                        Status.setTitle("§9Noch " + countdown + " Sekunden §7| §1" + C_Knuddelparty.size + " Spieler macht mit");
                     } else {
                         Status.setTitle("§9Noch " + countdown + " Sekunden §7| §b" + C_Knuddelparty.size + " Spieler machen mit");
                     }
