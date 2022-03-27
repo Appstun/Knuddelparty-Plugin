@@ -37,6 +37,8 @@ public final class _Main extends JavaPlugin {
     public static ArrayList<UUID> KnuddelnpartyMemberQuit = new ArrayList<>();
     public static Location PlayerLocation = new Location(Bukkit.getWorld("world"), 0,0,0,0,0);
 
+    public static boolean debug = false;
+
     @Override
     public void onEnable() {
         plugin = this;

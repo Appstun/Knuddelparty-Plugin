@@ -18,7 +18,7 @@ public class _KnuddelpartyCodes {
         UUID p_uudíd = p.getUniqueId();
         _Main.PlayerLocation.setWorld(p.getWorld());
         _Main.PlayerLocation.setX(p.getLocation().getX());
-        _Main.PlayerLocation.setY(200);
+        _Main.PlayerLocation.setY(p.getWorld().getMaxHeight() - 30);
         _Main.PlayerLocation.setZ(p.getLocation().getZ());
         _Main.PlayerLocation.setPitch(0);
         _Main.PlayerLocation.setYaw(0);
@@ -98,9 +98,9 @@ public class _KnuddelpartyCodes {
                             _Main.KnuddelpartyMember.clear();
                             Bukkit.getScheduler().cancelTask(_Main.KnuddelpartyTimer);
                             Bukkit.getScheduler().cancelTask(_Main.WhenEnd);
-                            for (int x = 0; x < 21; x++) {
-                                for (int z = 0; z < 21; z++) {
-                                    for (int y = 0; y <= 21; y++) {
+                            for (int x = 0; x < 26; x++) {
+                                for (int z = 0; z < 26; z++) {
+                                    for (int y = 0; y <= 26; y++) {
                                         Location loc = new Location(_Main.PlayerLocation.getWorld(), _Main.PlayerLocation.getX() - 10 + x, _Main.PlayerLocation.getY() + 16 - y, _Main.PlayerLocation.getZ() - 10 + z);
                                         loc.getBlock().setType(Material.AIR);
                                     }
@@ -121,9 +121,9 @@ public class _KnuddelpartyCodes {
             }
         }, 0, 20);
 
-        for (int x = 0; x < 21; x++) {
-            for (int z = 0; z < 21; z++) {
-                for (int y = 0; y <= 21; y++) {
+        for (int x = 0; x < 26; x++) {
+            for (int z = 0; z < 26; z++) {
+                for (int y = 0; y <= 26; y++) {
                     Location loc = new Location(_Main.PlayerLocation.getWorld(), _Main.PlayerLocation.getX() - 10 + x, _Main.PlayerLocation.getY() + 16 - y, _Main.PlayerLocation.getZ() - 10 + z);
                     loc.getBlock().setType(Material.AIR);
                 }
@@ -288,7 +288,7 @@ public class _KnuddelpartyCodes {
                 }
                 if (countdown <= 0) {
                     Bukkit.getScheduler().cancelTask(C_Knuddelparty.Counter);
-                    if (C_Knuddelparty.size >= 2) {
+                    if (C_Knuddelparty.size >= 2 || _Main.debug) {
                         Bukkit.broadcastMessage(_Main.prefix + "§a§lEinladung zur Knuddelparty beendet!");
                         Bukkit.broadcastMessage(_Main.prefix + "§5Es machen §f" + C_Knuddelparty.size + " §5Spieler mit.");
                         for (Player po : Bukkit.getOnlinePlayers()) {
