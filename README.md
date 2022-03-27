@@ -13,7 +13,7 @@ Befehle:
   - /join                                 --- Trete einer Knuddelparty bei, wenn eine Einladung läuft.
   - /start                                --- Starte eine Knuddelparty direkt.
   - /end                                  --- Beende eine Knuddelparty oder eine Einladung zu einer Knuddelparty.
-  -- %debug                               --- Für Debug, um Mindesanzahl an Spieler zu deaktivieren. (Benötigt OP-Rechte)
+  - %debug                               --- Für Debug, um Mindesanzahl an Spieler zu deaktivieren. (Benötigt OP-Rechte)
 
 
 Berechtingungen:
