@@ -4,7 +4,9 @@
 Knuddel Spieler!
 
 Version: 1.4.2
+
 Funktioniert am besten ab der Minecraft-Version 1.17.
+
 
 Befehle:
   - /knuddelparty                         --- Starte eine Einladung zu einer Knuddelparty.
