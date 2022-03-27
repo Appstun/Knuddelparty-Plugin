@@ -8,7 +8,7 @@ Funktioniert am besten ab der Minecraft-Version 1.17.
 
 Befehle:
   - /knuddelparty                         --- Starte eine Einladung zu einer Knuddelparty.
-  - /join                                 --- Trete einer Knuddelparty bei.
+  - /join                                 --- Trete einer Knuddelparty bei, wenn eine Einladung läuft.
   - /start                                --- Starte eine Knuddelparty direkt.
   - /end                                  --- Beende eine Knuddelparty oder eine Einladung zu einer Knuddelparty.
 
