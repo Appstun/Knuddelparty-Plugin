@@ -1,5 +1,6 @@
 package de.appstun.knuddelparty;
 
+import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -87,10 +88,12 @@ public class L_Events implements Listener {
 
     @EventHandler
     public void onDamage(EntityDamageEvent e) {
-        Player p = (Player) e.getEntity();
-        if(_Main.IsKnuddelparty) {
-            if((p.getLocation().getX() >= _Main.PlayerLocation.getX() - 15 && p.getLocation().getX() <= _Main.PlayerLocation.getX() + 15) && (p.getLocation().getY() >= _Main.PlayerLocation.getY() - 15 && p.getLocation().getY() <= _Main.PlayerLocation.getY() + 15) && (p.getLocation().getZ() >= _Main.PlayerLocation.getZ() - 15 && p.getLocation().getZ() <= _Main.PlayerLocation.getZ() + 15)) {
-                e.setCancelled(true);
+        if(e.getEntityType() == EntityType.PLAYER) {
+            Player p = (Player) e.getEntity();
+            if (_Main.IsKnuddelparty) {
+                if ((p.getLocation().getX() >= _Main.PlayerLocation.getX() - 15 && p.getLocation().getX() <= _Main.PlayerLocation.getX() + 15) && (p.getLocation().getY() >= _Main.PlayerLocation.getY() - 15 && p.getLocation().getY() <= _Main.PlayerLocation.getY() + 15) && (p.getLocation().getZ() >= _Main.PlayerLocation.getZ() - 15 && p.getLocation().getZ() <= _Main.PlayerLocation.getZ() + 15)) {
+                    e.setCancelled(true);
+                }
             }
         }
     }

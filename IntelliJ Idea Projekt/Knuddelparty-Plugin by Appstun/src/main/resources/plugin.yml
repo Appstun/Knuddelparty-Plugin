@@ -1,5 +1,5 @@
 name: Knuddelparty-Plugin
-version: 1.5
+version: 1.6
 main: de.appstun.knuddelparty._Main
 api-version: 1.17
 authors: [Appstun]
