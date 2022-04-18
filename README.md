@@ -3,7 +3,7 @@
 # Knuddelparty-Plugin
 Knuddel Spieler!
 
-Version: 1.5
+Version: 1.6
 
 Funktioniert am besten ab der Minecraft-Version 1.17.x!
 
